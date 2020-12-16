@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态添加表格</title>
+    <style>
+        table{
+            border: 1px solid;
+            margin: auto;
+            width: 500px;
+        }
+
+        td,th {
+            text-align: center;
+            border: 1px solid;
+        }
+        div{
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div>
+    <input type="text" id="id" placeholder="请输入编号">
+    <input type="text" id="name"  placeholder="请输入姓名">
+    <input type="text" id="gender"  placeholder="请输入性别">
+    <input type="button" value="添加" id="btn_add">
+
+</div>        }
+
+
+
+<table>
+    <caption>学生信息表</caption>
+    <tr>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>操作</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>令狐冲</td>
+        <td>男</td>
+        <td><a href="javascript:void(0);" onclick="delfun(this);">删除</a></td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>任我行</td>
+        <td>男</td>
+        <td><a href="javascript:void(0);" onclick="delfun(this);">删除</a></td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>岳不群</td>
+        <td>?</td>
+        <td><a href="javascript:void(0);" onclick="delfun(this);">删除</a></td>
+    </tr>
+</table>
+<script>
+    /*
+
+      添加一行的方法
+     */
+    //1.获取按钮
+    document.getElementById("btn_add").onclick=function () {
+        //2.获取内容
+        var id=document.getElementById("id").value;
+        var name=document.getElementById("name").value;
+        var gender=document.getElementById("gender").value;
+
+
+        /*
+        //创建td设置td的文本内容为文本框内容
+        var td_id=document.createElement("td")
+        td_id.innerText=id;
+
+        var td_name=document.createElement("td")
+        td_name.innerText=name;
+
+        var td_gender=document.createElement("td")
+        td_gender.innerText=gender;
+
+
+        var td_a=document.createElement("td")
+        var Element_a=document.createElement("a");
+        Element_a.setAttribute("href","javascript:void(0);");
+
+        Element_a.setAttribute("onclick","delfun(this);");
+
+        var text_a=document.createTextNode("删除")
+       // Element_a.innerText="删除";
+        Element_a.appendChild(text_a);
+        td_a.appendChild(Element_a);
+        //添加tr标签
+        var  tr=document.createElement("tr");
+        //
+        tr.appendChild(td_id);
+        tr.appendChild(td_name);
+        tr.appendChild(td_gender);
+        tr.appendChild(td_a);
+        var table=document.getElementsByTagName("table")[0];
+        //table 中添加tr
+        table.appendChild(tr);
+         */
+
+        var table=document.getElementsByTagName("table")[0];
+        table.innerHTML+="<tr>\n" +
+            "        <td>"+id+"</td>\n" +
+            "        <td>"+name+"</td>\n" +
+            "        <td>"+gender+"</td>\n" +
+            "        <td><a href=\"javascript:void(0);\" onclick=\"delfun(this);\">删除</a></td>\n" +
+            "    </tr>";
+    }
+
+
+    function delfun(obj){
+        var table=obj.parentNode.parentNode.parentNode;
+        var tr=obj.parentNode.parentNode;
+
+        table.removeChild(tr);
+
+    }
+
+</script>
+</body>>

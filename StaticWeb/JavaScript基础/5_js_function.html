@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建对象函数function方法</title>
+</head>
+<body>
+<script>
+    //方式1：
+     var fun1=new Function ("a","b","alert(a);");
+        fun1(3,4);
+    //方式2：
+    function fun2(a,b){
+        alert(a>b?"宋紫萱":"小仙女");
+    }
+    fun2(521,520);
+
+
+    var fun3=function (a ,b){
+        alert(a>b?"宋紫萱":"小仙女");
+    }
+    fun3(521.520);
+
+    alert(fun3.length);
+
+</script>
+</body>
+</html>

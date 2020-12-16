@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>location</title>
+</head>
+<body>
+
+<input  id="reloadPage" type="button" value="刷新页面">
+<input id="gobaidu" type="button" value="去百度">
+<script>
+    var reloadPage=document.getElementById("reloadPage");
+    reloadPage.onclick=function (){
+        location.reload();
+    }
+
+
+    var href=location.href;
+    alert(href);
+
+    var gobaidu=document.getElementById("gobaidu");
+    gobaidu.onclick=function (){
+        location.href="https://www.baidu.com";
+    }
+</script>
+</body>
+</html>

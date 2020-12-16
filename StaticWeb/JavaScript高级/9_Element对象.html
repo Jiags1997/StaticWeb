@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element对象</title>
+</head>
+<body>
+<a>点我试一试</a>
+<input type="button" id="addAttr" value="给a标签添加属性">
+<script>
+    var addAttr=document.getElementById("addAttr");
+    addAttr.onclick=function (){
+        var elementsByTagName = document.getElementsByTagName("a")[0];
+        elementsByTagName.setAttribute("href","https://www.baidu.com");
+    }
+
+
+
+</script>
+</body>
+</html>
