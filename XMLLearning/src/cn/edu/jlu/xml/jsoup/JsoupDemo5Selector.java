@@ -10,7 +10,6 @@ import java.io.IOException;
 
 /**
  *Jsoup对象
-
  */
 public class JsoupDemo5Selector {
 
@@ -21,10 +20,6 @@ public class JsoupDemo5Selector {
         Document document = Jsoup.parse(new File(path), "utf-8");
         //3查询name标签
         Elements name = document.select("name");
-
         System.out.println(name);
-
-
     }
-
 }
