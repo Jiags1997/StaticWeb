@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DemoFileDownload/DemoFileDownload.iml" filepath="$PROJECT_DIR$/DemoFileDownload/DemoFileDownload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoLogin/DemoLogin.iml" filepath="$PROJECT_DIR$/DemoLogin/DemoLogin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Response/Response.iml" filepath="$PROJECT_DIR$/Response/Response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet/Servlet.iml" filepath="$PROJECT_DIR$/Servlet/Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletandRequest/ServletandRequest.iml" filepath="$PROJECT_DIR$/ServletandRequest/ServletandRequest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StaticWeb/StaticWeb.iml" filepath="$PROJECT_DIR$/StaticWeb/StaticWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tomcat/Tomcat.iml" filepath="$PROJECT_DIR$/Tomcat/Tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XMLLearning/XMLLearning.iml" filepath="$PROJECT_DIR$/XMLLearning/XMLLearning.iml" />
+    </modules>
+  </component>
+</project>

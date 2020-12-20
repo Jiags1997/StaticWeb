@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--引入dtd约束-->
+<!--格式：<!DOCTYPE students（跟标签名称） SYSTEM "student.dtd"（文件位置）>-->
+<!DOCTYPE students SYSTEM "student.dtd">
+
+<students>
+	<student number="itcast_0001">
+		<name>tom</name>
+		<age>18</age>
+		<sex>male</sex>
+	</student>
+	
+</students>
